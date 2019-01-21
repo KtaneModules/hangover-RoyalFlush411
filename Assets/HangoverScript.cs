@@ -655,7 +655,7 @@ public class HangoverScript : MonoBehaviour
 
     void CheckIngredients()
     {
-        if(!correct)
+        if(!correct || ingredientsAdded.Count() != correctIngredients.Count())
         {
             for(int i = 0; i <= 19; i++)
             {
